@@ -1,7 +1,7 @@
-"use client";
-import React, { FC, ReactNode } from "react";
-import { ReduxProvider } from "@/providers/ReduxProvider";
-import LayoutPage from "@/components/layout/LayoutPage";
+'use client';
+import React, { FC, ReactNode } from 'react';
+import { ReduxProvider } from '@/providers/ReduxProvider';
+import LayoutPage from '@/components/layout/LayoutPage';
 
 interface RootLayoutClientProps {
 	children: ReactNode;

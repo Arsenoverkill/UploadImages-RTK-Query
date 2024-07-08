@@ -1,16 +1,14 @@
-import scss from "./TodoItem.module.scss";
+import scss from './TodoItem.module.scss';
 
 const TodoItem = () => {
 	return (
-		<>
-			<section className={scss.TodoItem}>
-				<div className="container">
-					<div className={scss.content}>
-						<h3>TodoItem</h3>
-					</div>
+		<section className={scss.TodoItem}>
+			<div className="container">
+				<div className={scss.content}>
+					<h3>TodoItem</h3>
 				</div>
-			</section>
-		</>
+			</div>
+		</section>
 	);
 };
 export default TodoItem;

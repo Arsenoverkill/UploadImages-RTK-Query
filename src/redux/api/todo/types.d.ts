@@ -1,4 +1,4 @@
 namespace TODO {
-	type GetMeResponse = User;
-	type GetMeRequest = void;
+	type GetResponse = Todo;
+	type GetRequest = void;
 }

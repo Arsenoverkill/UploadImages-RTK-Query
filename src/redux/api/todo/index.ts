@@ -1,14 +1,14 @@
-import { api as index } from "..";
+import { api as index } from '..';
 
 const api = index.injectEndpoints({
 	endpoints: (build) => ({
-		getTodos: build.query<TODO.GetMeResponse, TODO.GetMeRequest>({
+		getTodos: build.query<TODO.GetResponse, TODO.GetRequest>({
 			query: () => ({
-				url: "",
-				method: "GET",
+				url: '',
+				method: 'GET'
 			}),
-			providesTags: ["todo"],
-		}),
-	}),
+			providesTags: ['todo']
+		})
+	})
 });
 export const { useGetTodosQuery } = api;
