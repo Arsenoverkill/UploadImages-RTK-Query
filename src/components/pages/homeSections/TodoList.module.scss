@@ -1,4 +1,24 @@
 .TodoList {
-	.content {
+	margin-top: 50px;
+	.imagesBlocks {
+		margin-top: 30px;
+		display: flex;
+		gap: 30px;
+		.imageBlock {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			gap: 15px;
+			img {
+				border-radius: 10px;
+			}
+			button {
+				cursor: pointer;
+				background: rgb(255, 77, 77);
+				border: none;
+				padding: 5px 10px;
+				border-radius: 5px;
+			}
+		}
 	}
 }

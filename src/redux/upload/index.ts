@@ -5,7 +5,7 @@ import {
 } from '@reduxjs/toolkit/query/react';
 
 const baseQuery = fetchBaseQuery({
-	baseUrl: `${process.env.NEXT_PUBLIC_API_URL}`
+	baseUrl: `${process.env.NEXT_PUBLIC_UPLOAD_URL}`
 });
 
 const baseQueryExtended: BaseQueryFn = async (args, api, extraOptions) => {
@@ -13,11 +13,11 @@ const baseQueryExtended: BaseQueryFn = async (args, api, extraOptions) => {
 	return result;
 };
 
-export const api = createApi({
-	reducerPath: 'api',
+export const uploadApi = createApi({
+	reducerPath: 'uploadApi',
 	baseQuery: baseQueryExtended,
 	refetchOnReconnect: true,
 	refetchOnFocus: false,
-	tagTypes: ['todo'],
+	tagTypes: ['upload'],
 	endpoints: () => ({})
 });

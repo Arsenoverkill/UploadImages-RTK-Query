@@ -18,3 +18,5 @@ const RootLayoutClient: FC<RootLayoutClientProps> = ({ children }) => {
 };
 
 export default RootLayoutClient;
+// seo 
+// server режим

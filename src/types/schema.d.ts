@@ -1,9 +1,13 @@
+interface UploadFileTodo {
+	_id?: number;
+	title: string;
+	files: string;
+	isCompleted: boolean;
+}
+
 interface Todo {
 	_id?: number;
 	title: string;
-	img: string;
-}
-
-interface UploadFile {
-	files: [];
+	files: string;
+	isCompleted: boolean;
 }
